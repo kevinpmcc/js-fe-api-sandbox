@@ -1,9 +1,19 @@
+@font-face {
+    font-family: Budmo;
+    src: url(./budmo_jiggler.ttf);
+}
+
 * {
-  font-family: Helvetica;
+  font-style: bold; 
+}
+
+body {
+  /*background-color: ;*/
 }
  
 .cinema-name {
-  font-size: 1.3em;
+  font-family: Budmo;
+  font-size: 2.5em;
 }
 
 .movie-name: {
