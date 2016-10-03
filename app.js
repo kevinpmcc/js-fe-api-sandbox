@@ -17,7 +17,7 @@ function listCinemas(cinemasArray){
 function listMovies(moviesArray){
   var returnString = ""
   moviesArray.forEach(function(movie, index) {
-    returnString +=  movie.name + "</div>"  + listShowtimes(movie.showtimes) + "<br>"
+    returnString +=  movie.title + "</div>"  + listShowtimes(movie.showtimes) + "<br>"
   });
   return returnString
 }
