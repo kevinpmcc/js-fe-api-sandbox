@@ -9,7 +9,7 @@ $(function() {
 
 function listCinemas(cinemasArray){
   cinemasArray.forEach(function(cinema, index){
-    $("body").append("<p><div class='cinema-name'>" + cinema.name + "</div><br>" + "<div class='movie-name'>" + listMovies(cinema.movies) + "<br></p>")
+    $("body").append("<p><div class='cinema-name'>" + cinema.name + "</div><br>" +  listMovies(cinema.movies) + "<br></p>")
   }
   )
 }
@@ -17,7 +17,7 @@ function listCinemas(cinemasArray){
 function listMovies(moviesArray){
   var returnString = ""
   moviesArray.forEach(function(movie, index) {
-    returnString +=  movie.title + "</div>"  + listShowtimes(movie.showtimes) + "<br>"
+    returnString +=  "<div class='movie-name'>" +  movie.title + "</div>"  + listShowtimes(movie.showtimes) + "<br>"
   });
   return returnString
 }
@@ -25,7 +25,7 @@ function listMovies(moviesArray){
 function listShowtimes(showtimesArray) {
   var showtimesString = ""
   showtimesArray.forEach(function(showtime, movie) {
-    showtimesString += "<div class='showtime'>" + showtime + "</div>   "
+    showtimesString += "<span class='showtime'>" + showtime + "</span>   "
   });
   return showtimesString
 }
